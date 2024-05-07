@@ -59,16 +59,16 @@ void Grid::toggle(int x, int y)
     int indexX = x / sizeX;
     int indexY = y / sizeY;
 
-    // if (tablero[indexY][indexX] == 0)
+    // if (tablero[indexX][indexY] == 0)
     // {
-    //     tablero[indexY][indexX] = 1;
+    //     tablero[indexX][indexY] = 1;
     // }
     // else
     // {
-    //     tablero[indexY][indexX] = 0;
+    //     tablero[indexX][indexY] = 0;
     // }
 
-    // tablero[indexY][indexX] = tablero[indexY][indexX] == 0 ? 1 : 0;
+    // tablero[indexX][indexY] = tablero[indexX][indexY] == 0 ? 1 : 0;
 
-    tablero[indexY][indexX] = (tablero[indexY][indexX] + 1) % 2;
+    tablero[indexX][indexY] = (tablero[indexX][indexY] + 1) % 2;
 }
